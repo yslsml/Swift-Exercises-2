@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         print("3 to the power of 2 is \(power(3))")
         print("3 to the power of 3 is \(power(3, degree: 3))")
         print("Factorial of 6 is \(factorial(6))")
+        print("Factorial of 5 is \(factorial(number: 5))")
     }
 
     //MARK: overloading of functions
@@ -127,6 +128,14 @@ class ViewController: UIViewController {
             factorial *= num
             num -= 1
         } while num != 1
+        return factorial
+    }
+    
+    func factorial(number: Int) -> Int {
+        var factorial = 1
+        for i in 1...number {
+            factorial *= i
+        }
         return factorial
     }
     
