@@ -108,6 +108,15 @@ class ViewController: UIViewController {
         return false
     }
     
+    func compareStrings(_ firstString: String, _ secondString: String) {
+        if firstString > secondString {
+            print("\(firstString) is greater than \(secondString)")
+        } else if firstString < secondString {
+            print("\(firstString) is less than \(secondString)")
+        }
+        print("\(firstString) is equal to \(secondString)")
+    }
+    
     //MARK: cycle call of function
     func someFunc() {
         print("Do something")
