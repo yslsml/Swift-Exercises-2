@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         print("\nQuotient of 2 and 3 is \(quotient(2, 3))")
         print("Sum of digits of 5234 is \(sumOfDigits(5234))")
         print("Is авб greater than ввщ? \(isGreater("авб", than: "ввщ"))")
